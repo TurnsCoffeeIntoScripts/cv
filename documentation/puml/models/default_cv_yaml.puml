@@ -1,0 +1,14 @@
+@startyaml(id=DEFAULT_CV_YAML)
+!theme hacker
+
+/'
+Default yaml structure of the configuration
+'/
+title Default yaml structure\nof the configuration
+
+concourse:
+    url: ""
+    credentials:
+        username: ""
+        password: ""
+@endyaml

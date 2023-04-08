@@ -1,0 +1,25 @@
+@startuml
+!theme hacker
+skinparam ArrowFontColor Black
+skinparam ArrowFontStyle italic
+
+/'
+Represents the add command for the target argument
+    $> cv target add <TARGET NAME>
+'/
+title Add //Concourse// target
+scale 0.85
+
+start
+-> cv target add <target name>;
+if (\~/cv.yaml exists) then (true)
+    :Add target's name to config;
+    note left
+    \~/cv.yaml file with added target's name:
+    ""documentation/puml/models/cv_with_targets.puml""
+    end note
+else (false)
+    :Print error message;
+endif
+end
+@enduml

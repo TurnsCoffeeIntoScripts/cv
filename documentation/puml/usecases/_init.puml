@@ -1,0 +1,28 @@
+@startuml
+!theme hacker
+skinparam ArrowFontColor Black
+skinparam ArrowFontStyle italic
+
+/'
+Represents the init command
+    $> cv init
+'/
+title Init the //Concourse// Viewer's\nconfiguration
+scale 0.85
+
+start
+-> cv init;
+if (\~/cv.yaml exists) then (true)
+    :Print warning message
+    (name+location);
+else (false)
+    :Create default config file;
+    note right
+        Default content of \~/cv.yaml:
+        ""documentation/puml/models/default_cv_yaml.puml""
+    end note
+    :Print info message
+    (name+location);
+endif
+end
+@enduml

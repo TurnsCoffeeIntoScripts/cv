@@ -1,0 +1,16 @@
+@startyaml(ID=CV_WITH_TARGETS)
+!theme hacker
+!include default_cv_yaml.puml!DEFAULT_CV_YAML
+skinparam ArrowFontColor Cyan
+skinparam ArrowFontStyle italic
+skinparam BackgroundColor black
+
+/'
+Yaml structure of the configuration with targets
+'/
+title Yaml structure of the configuration\nwith targets
+
+    targets:
+        - Target A
+        - Target B
+@endyaml
