@@ -14,4 +14,12 @@ cv
 cv --help
 
 # Init command to create default configurations
+# Init help flag
 cv init
+cv init --help
+
+# Run and Show command are equivalent and are the main command to run/show the actual viewer
+cv run
+cv show
+
+
